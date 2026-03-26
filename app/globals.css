@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --anomaly-bg: #0d0d14; --anomaly-surface: #16161f; --anomaly-card: #1e1e2e;
+  --anomaly-border: #252535; --anomaly-accent: #6c63ff; --anomaly-danger: #ff4757;
+  --anomaly-warning: #ffa502; --anomaly-success: #2ed573;
+  --anomaly-text: #e8e8f0; --anomaly-muted: #6b6b80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--anomaly-bg);
+  color: var(--anomaly-text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--anomaly-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--anomaly-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--anomaly-accent);
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: var(--anomaly-border);
+  border-radius: 2px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--anomaly-accent);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--anomaly-accent);
+  outline-offset: 2px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
