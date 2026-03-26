@@ -60,7 +60,10 @@ export function CSVUploadForm() {
       )}
       <div className="p-3 rounded-lg bg-anomaly-surface border border-anomaly-border">
         <p className="text-xs text-anomaly-muted font-mono">
-          💡 For testing: you can use the <span className="text-anomaly-accent">public/sample-data.csv</span> file
+          💡 For testing: download{" "}
+          <a href="/sample-data.csv" download="sample-data.csv" className="text-anomaly-accent hover:underline">
+            sample-data.csv
+          </a>
         </p>
       </div>
     </div>
