@@ -1,11 +1,8 @@
 # 🔍 AnomalyDetector
 
-> AI-powered anomaly detection tool supporting multiple algorithms and data sources — built with Next.js 14 and Claude AI.
+> AI-powered anomaly detection tool supporting multiple algorithms and data sources 
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat-square&logo=tailwindcss)
-![Claude AI](https://img.shields.io/badge/Claude-AI-orange?style=flat-square)
+
 
 ---
 
